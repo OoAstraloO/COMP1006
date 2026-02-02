@@ -1,7 +1,6 @@
 <?php 
-require "includes/header.php"; 
-require "includes/footer.php"; 
 // require_once "connect.php";
+require "includes/header.php"; 
 ?>
 <main>
     <h1>Contact Form</h1>
@@ -28,3 +27,4 @@ require "includes/footer.php";
 
 
 </main>
+<?php require "includes/footer.php"; ?>

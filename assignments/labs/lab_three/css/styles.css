@@ -1,87 +1,129 @@
+/*Applies global styles to entire page*/
 body 
 {
+    /* Sets the default font of the page */
     font-family: Arial, Helvetica, sans-serif;
+    /* Sets the background colour of the page */
+    background-color: lightblue;
+    /* Adds space around the page's content */
     margin: 20px;
     padding: 0;
-    background-color: lightblue;
 }
 
+/* Centers all main headings */
 h1, h2, h3 
 {
     text-align: center;
 }
 
+/* Styles all paragraphs */
 p 
 {
     font-size: 16px;
+    /* Increases line spacing for readability */
     line-height: 1.5;
     text-align: center;
 }
 
+/* Styles unordered Lists */
 ul
 {
     font-size: 20px;
+    /* Removes default padding */
     padding: 0;
+    /* Limits width and centers the list */
     max-width: 400px;
     margin: 0 auto 20px auto;
 }
 
+/* Styles form container */
 form 
 {
+    /* Centers the form and adds spacing */
     margin: 20px  auto;
     padding: 20px;
+    /* Limits the form width */
     max-width: 600px;
+    /* Sets a background colour, border and shadow to the form */
     background-color: #fff4e6;
     border: 5px solid #ddd; 
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    /* Makes the form text bold */
     font-weight: bold;
 }
 
+/* Styles all input fields */
 input
 {
+    /* Ensures input fields take full width of their container */ 
     width: 100%;
+    /* Adds space around input fields */
     padding: 10px;
     margin: 10px 0 20px 0;
+    /* Styles the borders and rounds the corners */
     border: 1px solid #ccc;
     border-radius: 4px;
+    /* Ensures padding and borders are included in the element's total width */
     box-sizing: border-box;
 }
 
+/* Styles the submit button */
 input[type="submit"]
 {
+    /* Sets background colour */
     background-color: #1e3a8a;
+    /* Sets text colour */
     color: white;
+    /* Makes button text bold */
     font-weight: bold;
+    /* Adds padding to the button for better click area */
     padding: 10px 15px;
+    /* Changes cursor to pointer on hover */
     cursor: pointer;
 }
 
+/* Styles the submit button on hover */
 input[type="submit"]:hover 
 {
+    /* Darkens background colour on hover */
     background-color: #1e293a;
 }
 
+/* Styles the textarea field */
 textarea 
 {
+    /* Ensures textarea takes full width of its container */
     width: 100%;
+    /* Sets a fixed height for the textarea */
     height: 200px;
+    /* Adds space around the textarea */
     padding: 10px;
     margin: 10px 0 20px 0;
+    /* Styles the borders and rounds the corners */
     border: 1px solid #ccc;
     border-radius: 4px;
+    /* Ensures padding and borders are included in the element's total width */
     box-sizing: border-box;
+    /* Allows vertical resizing only */
     resize: vertical;
 }
 
+/* Styles the footer*/
 footer p
 {
+    /* Aligns footer text to the left */
     text-align: left;
+    /* Adds space above the footer */
     margin-top: 20px;
+    /* Sets a smaller font size and a different colour for footer text */
     font-size: 75%;
     color: #555;
 }
+
+/* Styles all div elements */
 div
 {
+    /* Sets a light background colour and centers text */
     background-color: #fff4e6;
     text-align: center;
 }

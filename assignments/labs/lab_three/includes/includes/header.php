@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- Created by guidance of header.php provided in week-4 -->
+<!-- Created by guidance of header.php provided in week 4 -->
 <html lang="en">
 
 <head>

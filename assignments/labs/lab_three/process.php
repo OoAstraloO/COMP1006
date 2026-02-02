@@ -70,48 +70,52 @@ if ($email === null || $email === '') {
 ?>
 
 
-  <main>
-  <?php if (!empty($errors)) {
-    ?>
-        <h1>There was a problem with your order</h1>
+        <main>
+        <?php if (!empty($errors)) {
+            ?>
+                <div>
+                    <h1>There was a problem with your submission</h1>
 
-        <ul>
-          <?php foreach ($errors as $error): ?>
-            <li><?= $error ?></li>
-          <?php endforeach; ?>
-        </ul>
+                    <ul>
+                    <?php foreach ($errors as $error): ?>
+                        <li><?= $error ?></li>
+                    <?php endforeach; ?>
+                    </ul>
 
-        <p>
-          <a href="index.php">Return to the form</a>
-        </p>
-      </main>
-    </body>
+                    <p>
+                    <a href="index.php">Return to the form</a>
+                    </p>
+                </div>
+            </main>
+        </body>
     </html>
     <?php
     exit;
 }
 ?>
-    <h1>Thank You for reaching out! We shall get back to you as soon as we can.</h1>
+        <div>
+            <h1>Thank You for reaching out! We will get back to you as soon as we can.</h1>
 
-    <p>
-      Thanks <strong><?= $firstName ?></strong>!
-      Your order has been received and sent to the bakery.
-    </p>
+            <p>
+            Thanks <strong><?= $firstName ?></strong>!
+            Your order has been received and sent to the bakery.
+            </p>
 
-    <h2>Your Contact Details</h2>
+            <h2>Your Contact Details</h2>
 
-    <p><strong>Name:</strong> <?= $firstName ?> <?= $lastName ?></p>
-    <p><strong>Email:</strong> <?= $email ?></p>
+            <p><strong>Name:</strong> <?= $firstName ?> <?= $lastName ?></p>
+            <p><strong>Email:</strong> <?= $email ?></p>
 
-    <h3>Message</h3>
-    <p><?= $comments === "" ? "(none)" : $comments ?></p>
+            <h3>Message</h3>
+            <p><?= $comments === "" ? "(none)" : $comments ?></p>
 
-    <p>
-      A confirmation has been sent to the bakery.
-    </p>
+            <p>
+            A confirmation has been sent to the bakery.
+            </p>
 
-      <a href="index.php">Send another message</a>
-      </main>
+            <a href="index.php">Send another message</a>
+        </div>
+    </main>
 
 <?php 
 require "includes/footer.php";
